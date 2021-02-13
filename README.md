@@ -3,9 +3,10 @@
 ___
 ## OBJECTIVE
 Building a model to predict employees to be promoted.Herein after, I will refer the employees that should be promoted as 'high potential' employees.
-The prediction can have a potential use as a pre-screening tool  a very large/global company where the evaluation process to identify 'high potential' employees could be very lengthy (and costly). 
+The prediction can have a potential use as a pre-screening tool  a very large/global company where the evaluation process to identify 'high potential' employees could be very lengthy (and costly). If we can pre-screen 2,000-2,500 employees for every 1,000 employees promoted, the evaluation/selection time can be significantly reduced.
 As the model should be minimize any (irrelevant) biases with regards to employee selection, it could  help in achieving the pre-screening as objective as possible based on the features available.
 Furthermore, as the model is intended as a (and not the) tool for selection , rathen than foccusing on the accuracy and the precision of the model, it is more important to minimize the number (percentage) of 'high potential' employees to be mislabeled and left out, not passing the pre-screening. Therfore more focusing on the sensitivity of the model.
+
 
 ## METHOD & TOOLS
 
@@ -20,6 +21,7 @@ The data include various type of features:
 * ordinal numerical: previous year rating(0 to 5), awards (0,1)
 * categorical: region, recruitment channels, education and departments
 
+During the this initial data exploration, no irrelevant biases was detected. 
 The distribution by each each feature are in general pretty much balanced  inline with the overall distribution mean except for the following:
 *  promotion average in region with smaller number of employees ( < 600 people)is only 4.8% vs 8.7% average for the other regions(a ratio of  1:2). The employees in the smaller region only have half a chance to be promoted compared to others. During the data cleaning, I decided to removed this smaller regions (c. 2800 rows), thinking that we may not be able to get a fit-for-all model and a different model or approach could be adopted for those regions. 
 * referred employees have the highest promotion rate of 12%. However they represents only about 2% of the total employees and further correlation analysis with another feature which is the training scores, this higher promotion rate 'could be explained' by the higher average training scores/marks. 
@@ -72,23 +74,23 @@ I must have carried out the GridSearchCV incorrectly.
 |:---------------------------------| ------:|
 | Intercept                        | 0.33   |
 | gender                           | -0.01  |
-| awards	                         | 1.69   |
+| awards	                          | 1.69   |
 | analytics	department             | -4.00  |
 | finance	department               | 0.25   |
 | HR department                    | 1.40   |
 | legal department                 | -0.42  |
-| procurement department	         | -1.62  |
-| dept_R&D	                       | -4.42  |
-| dept_sales&marketing	           | 1.65   |
+| procurement department	          | -1.62  |
+| dept_R&D	                        | -4.42  |
+| dept_sales&marketing	            | 1.65   |
 | dept_technology	                 | -3.14  |
 | bachelor_degree	                 | -0.28  |
-| masters_degree	                 | 0.32   |
-| recruitment_referred	           | 0.00   |
-| recruitment_sourcing	           | -0.26  |
-| age*                             | -0.03  |
-| service years*                   | -0.07  |
-| training*	                       | 2.35   |
-| training scores*	               | 0.48   |
+| recruitment_referred	            | 0.32   |
+| recruitment_sourcing	            | 0.00   |
+| age*                             | -0.26  |
+| service years*                   | -0.03  |
+| training*	                       | -0.07  |
+| training scores*	                | 2.35   |
+| rating*                          | 0.48   |
 
 \* scaled features
 
