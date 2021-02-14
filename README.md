@@ -102,12 +102,11 @@ The model will not be suitable even as a pre-screening tool as it identifies sig
 
 
 
-![Case 3 Actual vs Prediction](case_3a_lr_s.pdf)
 
 
 ## PROJECT DELIVERABLES:
 
-[LINEAR_REGRESSION](project2_lr.ipynb)
+[LINEAR_REGRESSION](https://github.com/carlamoestafa/project-3/blob/main/p3_predicting_promotion.ipynb)
 
 [WEB SCRAPING](project2_webscraping.ipynb)
 
