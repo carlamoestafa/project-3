@@ -107,8 +107,12 @@ The model will not be suitable even as a pre-screening tool as it identifies sig
 ## PROJECT DELIVERABLES:
 
 [LOGISTIC_REGRESSION](https://github.com/carlamoestafa/project-3/blob/main/p3_predicting_promotion.ipynb)
+
 [PROJECT3_PRESENTATION](https://github.com/carlamoestafa/project-3/blob/main/employee_promotion.ppt)
-[SQL_W3SCHOOL](https://github.com/carlamoestafa/project-3/blob/main/1_w3school-CMo.md)
+
+[SQL_W3SCHOOL](https://github.com/carlamoestafa/project-3/blob/main/1_w3school-CMo.md) 
+
 [SQL_BASEBALL](https://github.com/carlamoestafa/project-3/blob/main/baseball.ipynb)
-[SQL_SOCCER](soccer.ipynb)
+
+[SQL_SOCCER](https://github.com/carlamoestafa/project-3/blob/main/soccer.ipynb)
 
