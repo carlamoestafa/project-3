@@ -109,5 +109,5 @@ The model will not be suitable even as a pre-screening tool as it identifies sig
 [LOGISTIC_REGRESSION](p3_predicting_promotion.ipynb)
 [SQL_W3SCHOOL](1_w3school-CMo.md)
 [SQL_BASEBALL](baseball.ipynb)
-
+[SQL_SOCCER](soccer.ipynb)
 
